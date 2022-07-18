@@ -1,0 +1,406 @@
+.body{
+   
+    background-image: linear-gradient(rgb(16, 23, 117), rgb(168, 175, 224));
+    background-repeat: no-repeat;
+    background:url(/IMAGES/cake\ image.jpg)repeat-x;
+    background-size: 50%;
+     position: 500px;
+}
+
+
+.h2{
+    color:rgb(114, 12, 12);
+    font-size: 30px;
+    margin-top:20px  ;
+}
+
+.WRAPPER{
+    background:radial-gradient(#dfdfdf,rgb(193, 203, 252));
+    width: 100%;
+    max-width: 100%;
+    padding: 100%;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 35px;
+    margin:  auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-top: 100px;
+    
+}
+
+.CATEGORIES-SEC{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    background: rgb(161, 161, 163);
+    background-image: initial;
+  
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(209, 211, 223);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 100px;
+    padding-top: 20px;
+    padding-right:20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    flex-direction: column;
+    margin-top: 0px;
+  
+}
+
+.TITLE-BAR{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.TITLE .TITLE-BAR{
+        flex: 1;
+        position: relative; 
+}
+
+.CATEGORIES{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       
+        background: rgb(161, 161, 163);
+        background-image: initial;
+      
+        background-size: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: rgb(209, 211, 223);
+        box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+        border-radius: 4px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        padding: 100px;
+        padding-top: 20px;
+        padding-right:20px;
+        padding-bottom: 0px;
+        padding-left: 20px;
+        
+    
+}
+.CATEGORIES2{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+  background: rgb(161, 161, 163);
+  background-image: initial;
+
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(209, 211, 223);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+  border-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 100px;
+  padding-top: 20px;
+  padding-right:20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  
+
+}
+
+#flavourimage{ 
+ color: rgb(196, 246, 250);
+ background-origin: inherit;
+ border-style: groove;
+ size: 5%;
+ text-decoration: none;
+}
+
+#trendingimage{ 
+  color: rgb(196, 246, 250);
+  background-origin: inherit;
+  border-style: groove;
+  size: 5%;
+  text-decoration: none;
+ }
+.flavour{
+    text-align: center;
+    text-decoration: none;
+}
+.flavour2{
+  text-align: center;
+  text-decoration: none;
+}
+
+#cakedetails{
+  margin-right: 50%;
+    position: static;
+  top: 2px;
+  right: 760px;
+}
+
+.cakename{
+    color: rgb(243, 26, 11);
+    font-weight: 30px;
+    font-size: 20px;
+}
+
+#flavourname{
+     color: rgb(252, 55, 6);
+}
+
+
+.loginbox{
+  width: 320px;
+  height: 400px;
+  background: rgb(236, 75, 96);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+.avathar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 30%;
+}
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.loginbox p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.loginbox input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+  .topnav {
+    align-items: flex-start;     
+        flex-wrap: nowrap;
+    overflow: hidden;
+    background-color: rgb(243, 192, 205);
+  }
+  
+  .topnav a {
+    float: right;
+    display: block;
+    color: #241616;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(102, 134, 202);
+  }
+  
+  .topnav a.active {
+    background-color: #e74141;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  #trendingimage{ 
+    color: rgb(196, 246, 250);
+    background-origin: inherit;
+    border-style: groove;
+    width: 170px;
+   }
+
+   #header {
+ 
+    position: fixed;
+    top:10px;
+    justify-content: space-between;
+    background-color: #f16679;
+    display: flex;
+    width: 100%;
+    text-align: right;
+    }
+    ​
+    #content {
+    margin-top: 5px;
+    }
+
+    .headerclass{
+      margin-top: 350px;
+    }
+
+    .cakedetails{
+      margin-top: 160px;
+    }
+
+    
+.about-section {
+  width: 100%;
+  padding: 100px;
+  text-align: center;
+  background-color: #474e5d;
+  color: rgb(12, 6, 6);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(https://media.istockphoto.com/photos/strawberry-and-cream-sponge-cake-on-white-wooden-table-picture-id1294578109?b=1&k=20&m=1294578109&s=170667a&w=0&h=cK7uKAhs3r08JVUA22omHA-ToHRr5duIRagkoJwBJHc=) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: 0px;
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+width: 90%;
+padding: 10px 18px;
+margin: 10px 10px 10px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 15px;
+}
+
+/* Set a style for all buttons */
+button {
+background-color: #04AA6D;
+color: white;
+padding: 10px 25px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 250px;
+opacity: 0.9;
+}
+
+button:hover {
+opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+padding: 10px 20px;
+background-color: #ca2f2f;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+float: left;
+width: 100%;
+}
+
+/* Add padding to container elements */
+.container {
+padding: 40px;
+padding-top: 40px;
+padding-left: 75px;
+padding-right: 75px;
+padding-bottom: 30px;
+max-width: 300px;
+background-image: linear-gradient(rgb(202, 50, 45), rgb(211, 211, 198));
+background-size: cover;
+margin: 40px auto;
+margin-top: 40px;
+margin-right: auto;
+margin-bottom: 50px;
+margin-left: auto;
+border-radius: 5px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+
+
+
+
+
+}
+
+/* Clear floats */
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+.cancelbtn, .signupbtn {
+   width: 55%;
+}
+}
+.tick{
+  margin-left: 40%;
+  margin-top: 8%;
+}
