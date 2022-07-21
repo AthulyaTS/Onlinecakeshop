@@ -1,0 +1,32 @@
+#header {
+ 
+    position: fixed;
+    top:10px;
+    justify-content: space-between;
+
+    display: flex;
+    width: 100%;
+    text-align: right;
+    }
+    ​
+    #content {
+    margin-top: 5px;
+    }
+
+    .headerclass{
+      margin-top: 350px;
+    }
+
+    .tick{
+        margin-left: 0;
+        margin-right: 40%;
+        margin-top: 8%;
+      }
+
+      .body{
+
+        background-image: url(/IMAGES/successfinal.jpg);
+        background-size: cover;
+
+        background-repeat: no-repeat;
+      }
