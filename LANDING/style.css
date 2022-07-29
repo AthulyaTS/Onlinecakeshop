@@ -401,3 +401,100 @@ display: table;
    width: 55%;
 }
 }
+
+
+#order{
+  background-color: rgb(235, 52, 52);
+  height: 50px;
+  text-align: center;
+  font-size: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+ margin-top: 100px;
+ font-style: italic;
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+
+}
+
+
+.update{
+  background: url(https://img.freepik.com/premium-photo/delicious-beautiful-handmade-cake-confectionery-holiday-dessert-decorated-with-fresh-berries-green-leaves-sweets_166262-657.jpg?w=360) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.division{
+  
+  height: 550px;
+  background: gray;
+  opacity: 0.8;
+  padding: 10px;
+  padding-left: 20px;
+  margin-top: 100px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 0;
+  background-position: center;
+  border-radius: 5px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+
+.inner{
+  
+  margin-top: 50px;
+  margin-left: 90px;
+  margin-right: 100px;
+  
+}
+input[type=text],input[type=""] {
+  width: 85%;
+  padding: 10px 18px;
+  margin: 10px 10px 0px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+
+}
+select {
+  width: 95%;
+  padding: 10px 18px;
+  margin: 10px 10px 0px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  width: 250px;
+  opacity: 0.9;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  
+}
+
+.updatebtn {
+  padding: 10px 20px;
+  background-color: #052e0c;
+  border: none;
+  cursor: pointer;
+  width: 250px;
+  opacity: 0.9;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  
+
+}

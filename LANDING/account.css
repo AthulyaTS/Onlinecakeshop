@@ -1,0 +1,79 @@
+.header-account{
+    margin: left 30px;
+    margin: right 30px;
+   
+     background-color: rgb(243, 192, 205) ;
+     color:black;
+     padding: 30px;
+     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+   border-radius: 12px;
+     
+ }
+ .header-order{
+    margin-left:30px;
+   margin-right:30px;
+  
+    background-color: rgb(243, 192, 205) ;
+    color:black;
+    padding: 30px;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  margin-left:30px
+   margin-right:30px
+    
+ }
+ .account-icon{
+   width: 45;
+   height: 45px;
+ }
+ .contain-account{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+ }
+ .headersection{
+   
+   margin-bottom: 30px;
+   font-size: 30px;
+ 
+ }
+ 
+ .article-account{
+   margin-top: 10px;
+   background-color: white ;
+   color:black;
+   padding: 30px;
+   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+ ;
+   
+ }
+ .article-order{
+   margin-left:30px;
+   margin-right:30px;
+   margin-top: 10px;
+   background-color: white ;
+   color:black;
+   padding: 30px;
+   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+ ;
+   
+ }
+ .article-part{
+   padding: 30;
+   border-bottom:1px solid ;
+ }
+ .article-link{
+   display: inline-block;
+   margin-left: 1000px;
+   margin-top: 15px;
+   text-decoration: none;
+ }
+ .contain-order{
+   display: flex;
+   gap:300px;
+   
+   
+ }
+ .imagestyle{
+   display: inline-block
+ }
