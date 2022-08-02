@@ -4,24 +4,30 @@ const {QueryCall} = require('./functions/databaseFunctions.js')
 
 
 router.get('/' , (req,res,next)=>{
-    const query = `SELECT id, budget_fund_scheme, full_name, department, mainhead, subhead, total, balance, amount, to_whom, cb_number, voucher_numer, description
-	FROM public.stock_table;`;
+    const query = `SELECT * FROM public.products;`;
     QueryCall(res, query);
 })
 
-router.post('/' , (req,res,next)=>{
-    const data=req.body ;
-    const query = `INSERT INTO public.stock_table(
-        budget_fund_scheme, full_name, department, mainhead, subhead, total, balance, amount, to_whom, cb_number, voucher_numer, description)
-        VALUES( '${data.budget_fund_scheme}' , '${data.full_name}', '${data.department}', '${data.mainhead}', '${data.subhead}', ${data.total}, ${data.balance}, ${data.amount}, '${data.to_whom}', '${data.cb_number}', '${data.voucher_numer}', '${data.description}');`;
+router.patch('/' , (req,res,next)=>{
+    const data=req.body;
+    const query =   ` UPDATE public.products
+	SET  pname='${data.pname}', price=${data.price}, status='${data.status}'
+	WHERE id=1; `;
     QueryCall(res, query);    
 })
 
+router.post('/' , (req , res , next ) =>{
+    const data=req.body ;
+    const query = `INSERT INTO public.products(
+       pname, price, status)
+        VALUES ('${data.pname}' ,'${data.price}' ,'${data.status}' );`;
+    QueryCall(res, query);
+});
 
-router.get('/:orderId' , (req,res,next)=>{
+router.get('/:Id' , (req,res,next)=>{
     const orderId = req.params.orderId;
     res.status(200).json({
-        "message":"get order id : "+orderId
+        "message":"get order id : "+Id
     })
 } )
 

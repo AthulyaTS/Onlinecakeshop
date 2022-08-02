@@ -8,3 +8,12 @@ CREATE TABLE "order_table" (
   "item_quantity" varchar,
   "order_date" varchar
 );
+
+
+CREATE TABLE `products` (
+  `id` int PRIMARY KEY,
+  `pname` varchar(255),
+  `price` float8,
+  `status` ENUM ('out_of_stock', 'in_stock', 'running_low'),
+  `created_at` datetime DEFAULT (now())
+);

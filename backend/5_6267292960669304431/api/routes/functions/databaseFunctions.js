@@ -1,10 +1,10 @@
 // POSTGRES START
 const Pool = require('pg').Pool
 const pool = new Pool({
-    user: 'abcduser',
-    host: 'postgres-cakeshop',
-    database: 'abcduser',
-    password: 'abcdpsw',
+    user: 'postgres',
+    host: 'localhost',
+    database: 'cakeshopdb',
+    password: 'malu',
     port: 5432,
 })
 // POSTGRES END

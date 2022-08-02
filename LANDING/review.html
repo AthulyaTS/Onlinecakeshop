@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: latha;
+            color:black;
+            background: url(https://media.istockphoto.com/photos/woman-eating-candies-at-workplace-top-view-picture-id1086905758?k=20&m=1086905758&s=612x612&w=0&h=5H49l0BfOjGA7-MkEEfmkAYMN4JRMOByu5ApCY6f1KY=)no-repeat;
+            background-size: 100%,90%;
+        } 
+       .box{ width: 1000px;
+       float:right;
+       border:2px;}
+
+       .box ul li{
+           width: 120px;
+           float:left;
+           margin: 10px auto;
+           text-align: center;
+       }
+
+       .box ul li a{ text-decoration: none; 
+       color:black;}
+
+       .box ul li:hover{background-color: rgb(2, 128, 9);}
+       .box ul li a:hoever{ color:white;}
+
+        </style></body>
+
+<body>
+     <div class = "box">
+     <ul type="none">
+         <li><a href="index.html"> Home</a></li>
+         <li><a href="#"> Menue</a></li>
+         <li><a href="orders.html"> Order</a></li>
+       
+  </ul>
+  </div>
+
+
+
+
+
+       <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <form method="post" name="details">
+        <h1>Lets talk about you</h1>
+        <p>Name <input type="text" name="name" id="name" required></p>
+        <p>Email <input type="email" name="email" id="email" required></p>
+    
+
+        <p>Location <select name="location" id="location" required>        </p>
+
+            <option value="">City</option>
+            <option value="Thiruvananthapram">Thiruvananthapuram</option>
+            <option value="kollam">Kollam</option>
+            <option value="Alappuzha">Alappuzha</option>
+            <option value="Pathanamthitta">Pathanamthitta</option>
+            <option value="Kottayam">Kottayam</option>
+            <option value="Ernakulam">Ernakulam</option>
+            <option value="kochi">kochi</option>
+            <option value="Trissur">Trissur</option>
+            <option value="Palakkad">Palakkad</option>
+            <option value="kannur">kannur</option>
+         <option value="other">Other</option>
+        </select>
+        <h2>Whats your views about us</h2>
+        <textarea name="views_on_us" id="views" cols="50" rows="10" required></textarea>
+        </textarea><br><br>
+        <a href="success.html"><input type="submit" value="submit"> </a>
+        <input type="reset" value="reset">
+
+        
+        
+        
+    
+
+         </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz6Hg-4BajY0YN2yPo6wLYQ07VewFF3ESV_Lq-Xj7LW-urnQxyI24tMz7jLMVanRfDQ/exec'
+        const form = document.forms['details']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

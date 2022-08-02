@@ -25,13 +25,13 @@ router.get('/' , async(req , res , next ) =>{
 });
 
 
-// the below router `router.get('/:contingencyId' ...`
-// will cath the get requests with a contingencyId given to it 
-// this is used to return contingency row with id contingencyId
-router.get('/:contingencyId' , async (req , res , next ) =>{
+// the below router `router.get('/:orderid' ...`
+// will cath the get requests with a orderid given to it 
+// this is used to return contingency row with id orderid
+router.get('/:orderid' , async (req , res , next ) =>{
     try{
         const query = `SELECT id, user_full_name, user_full_address, user_phone, item_name, item_price, item_quantity, order_date
-        FROM public.order_table WHERE id=${req.params.contingencyId}; `;
+        FROM public.order_table WHERE id=${req.params.orderid}; `;
         await QueryCall(res, query);
     }
     catch(err){
@@ -42,7 +42,7 @@ router.get('/:contingencyId' , async (req , res , next ) =>{
 
 
 // the router.post will handle the post requests in the contingency.js ,
-// used to post new rows to contingency table
+// used to post new rows to contingency table        
 router.post('/' , (req , res , next ) =>{
     const data=req.body ;
     const query = `INSERT INTO public.order_table(

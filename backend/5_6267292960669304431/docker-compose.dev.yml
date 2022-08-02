@@ -20,4 +20,4 @@ services:
       - POSTGRES_USER=abcduser
       - POSTGRES_PASSWORD=abcdpsw
     volumes:
-      - /home/sree/Documents/athulya/database/:/var/lib/postgresql/data
+      - D:\miniproject\backend\5_6267292960669304431

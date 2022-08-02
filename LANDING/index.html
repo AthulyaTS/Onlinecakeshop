@@ -12,11 +12,10 @@
        <img id="logo" src="/IMAGES/Frame 1.png"  width="90px" height="90px">
        <div class="logo"><h2 class="h2">CAKEs_HUT</h2></div>
         <div class="topnav" id="content">
-            <a class="active" href="signup.html">Sign Up</a>
-            <a class="active" href="login.html">Login </a>
+            <a href="account.html">My Account</a>
             <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-             <a href="#cakes">Cart</a>
+            <a href="#about">Contact</a>
+             <a href="cart.html">Cart</a>
             <a href="#home">Home</a>
           </div></header></div><div  class="WRAPPER">
         <div   id="home" class="CATEGORIES-SEC">
@@ -28,36 +27,82 @@
                 <div class="CATEGORIES">
                     <div  class="flavour">
                     <img id="flavourimage" src="/IMAGES/blackforest.jpeg" alt="some text"  width="164px" height="164px" /><h3 id="flavourname">   BLACKFOREST
-                        <br>Rs.600/-<div id="order">
-                            <h4><a href="signup.html">Place Order</h4></a>
-                           </div>
-                         
+                        <br>Rs.600/-<br><select name="kg" id="kgBLACKFOREST">
+                            <option value=1>1 Kg</option>
+                            <option value=2>2 Kg</option>
+                            <option value=3>3 Kg</option>
+                            <option value=4>4 Kg</option>
+                            <option value=5>5 Kg</option>
+                            <!-- // -->
+                          </select><div id="order" 
+                          onclick="SendOrder('order','BLACKFOREST',600,'kgBLACKFOREST')"
+                          >
+                          <button>Place Order</button> 
+                         </div> <a href="checkout.html">PAY</a> 
                     </h3></div>
+                   
                     <div class="flavour">
                     <img id="flavourimage"src="/IMAGES/Chocolate-Cake10.jpeg" alt="some text" width="164px" height="164px" /><h3 id="flavourname">CHOCOLATE
-                        <br>Rs.700/-<div id="order">
-                            <h4><a href="signup.html">Place Order</h4></a>
-                           </div>
+                        <br>Rs.700/-<br><select name="kg" id="kgCHOCOLATE">
+                            <option value=1>1 Kg</option>
+                            <option value=2>2 Kg</option>
+                            <option value=3>3 Kg</option>
+                            <option value=4>4 Kg</option>
+                            <option value=5>5 Kg</option>
+                            
+                          </select><div id="order"
+                          onclick="SendOrder('order','CHOCOLATE',700,'kgCHOCOLATE')"
+                          >
+                          <button>Place Order</button>
+                           </div><a href="checkout.html">PAY</a>
                           </h3></div>
                    <div class="flavour">
                     <img id="flavourimage" src="/IMAGES/BUTTERSCOTCH.jpg" alt="some text" width="164px" height="164px" /><h3 id="flavourname">   BUTTER SCOTCH
-                        <br>Rs.800/-<div id="order">
-                            <h4><a href="signup.html">Place Order</h4></a>
+                        <br>Rs.800/-<br><select name="kg" id="kgBUTTERSCOTCH">
+                            <option value=1>1 Kg</option>
+                            <option value=2>2 Kg</option>
+                            <option value=3>3 Kg</option>
+                            <option value=4>4 Kg</option>
+                            <option value=5>5 Kg</option>
+                            
+                          </select><div id="order"
+                          onclick="SendOrder('order','BUTTERSCOTCH',800,'kgBUTTERSCOTCH')"
+                          >
+                          <button>Place Order</button>
                            </div>
-                         
+                           <a href="checkout.html">PAY</a>
                     </h3></div>
                     <div class="flavour">
                     <img id="flavourimage" src="/IMAGES/REDVELVET2.jpg" alt="some text" width="164px" height="164px" /><h3 id="flavourname">   RED VELVET
-                        <br>Rs.900/-<div id="order">
-                            <h4><a href="signup.html">Place Order</h4></a>
+                        <br>Rs.900/-<br><select name="kg" id="kgREDVELVET">
+                            <option value=1>1 Kg</option>
+                            <option value=2>2 Kg</option>
+                            <option value=3>3 Kg</option>
+                            <option value=4>4 Kg</option>
+                            <option value=5>5 Kg</option>
+                            
+                          </select><div id="order"
+                          onclick="SendOrder('order','RED VELVET',900,'kgREDVELVET')"
+                          >
+                            <button>Place Order</button>
                            </div>
+                           <a href="checkout.html">PAY</a>
                           </h3></div>
                    <div class="flavour">
                     <img id="flavourimage" src="/IMAGES/PINEAPPLE2.jpg" alt="some text" width="164px" height="164px" /><h3 id="flavourname">   PINE APPLE 
-                        <br>Rs.600/-<div id="order">
-                            <h4><a href="signup.html">Place Order</h4></a>
+                        <br>Rs.600/-<br><select name="kg" id="kgPINEAPPLE">
+                            <option value=1>1 Kg</option>
+                            <option value=2>2 Kg</option>
+                            <option value=3>3 Kg</option>
+                            <option value=4>4 Kg</option>
+                            <option value=5>5 Kg</option>
+                            
+                          </select><div id="order"
+                          onclick="SendOrder('order','PINEAPPLE',600,'kgPINEAPPLE')"
+                          >
+                          <button>Place Order</button>
                            </div>
-                         
+                           <a href="checkout.html">PAY</a>
                     </h3></div>
 
                  
@@ -66,38 +111,83 @@
                 <div class="CATEGORIES2">
                     <div  class="flavour2"> 
                     <img id="trendingimage" src="/IMAGES/themecake.jpeg" alt="some text" width="50px" height="170px" /><h3 id="flavourname">  THEME CAKES
-                        <br>Rs.800/-<div id="order">
-                            <h4><a href="signup.html">Place Order</h4></a>
+                        <br>Rs.800/-<br><select name="kg" id="kgTHEME">
+                            <option value=1>1 Kg</option>
+                            <option value=2>2 Kg</option>
+                            <option value=3>3 Kg</option>
+                            <option value=4>4 Kg</option>
+                            <option value=5>5 Kg</option>
+                            
+                          </select><div id="order"
+                          onclick="SendOrder('order','THEME',800,'kgTHEME')"
+                          >
+                          <button>Place Order</button>
                            </div>
-                         
+                           <a href="checkout.html">PAY</a>
                     </h3></div>
                     <div class="flavour2">
                     <img id="trendingimage"src="/IMAGES/pinatha cake.jpg" alt="some text" width="50px" height="170px"/><h3 id="flavourname">PINATHA CAKES
-                        <br>Rs.750/-<div id="order">
-                            <h4><a href="signup.html">Place Order</h4></a>
+                        <br>Rs.750/-<br><select name="kg" id="kgPINATHA">
+                            <option value=1>1 Kg</option>
+                            <option value=2>2 Kg</option>
+                            <option value=3>3 Kg</option>
+                            <option value=4>4 Kg</option>
+                            <option value=5>5 Kg</option>
+                            
+                          </select><div id="order"
+                          onclick="SendOrder('order','PINATHA',750,'kgPINATHA')"
+                          >
+                          <button>Place Order</button>
                            </div>
-                         
+                           <a href="checkout.html">PAY</a>
                     </h3></div>
                    <div class="flavour2">
                     <img id="trendingimage" src="/IMAGES/bombcake.jpeg" alt="some text" width="50px" height="170px" /><h3 id="flavourname">   BOMB CAKES
-                        <br>Rs.800/-<div id="order">
-                            <h4><a href="signup.html">Place Order</h4></a>
+                        <br>Rs.800/-<br><select name="kg" id="kgBOMB">
+                            <option value=1>1 Kg</option>
+                            <option value=2>2 Kg</option>
+                            <option value=3>3 Kg</option>
+                            <option value=4>4 Kg</option>
+                            <option value=5>5 Kg</option>
+                            
+                          </select><div id="order"
+                          onclick="SendOrder('order','BOMB',800,'kgBOMB')"
+                          >
+                          <button>Place Order</button>
                            </div>
-                         
+                           <a href="checkout.html">PAY</a>
                     </h3></div>
                     <div class="flavour2">
                     <img id="trendingimage" src="/IMAGES/jar cake.jpg" alt="some text" width="50px" height="170px" /><h3 id="flavourname"> JAR CAKES
-                        <br>Rs.700/-<div id="order">
-                            <h4><a href="signup.html">Place Order</h4></a>
+                        <br>Rs.700/-<br><select name="kg" id="kgJAR">
+                            <option value=1>1 Kg</option>
+                            <option value=2>2 Kg</option>
+                            <option value=3>3 Kg</option>
+                            <option value=4>4 Kg</option>
+                            <option value=5>5 Kg</option>
+                            
+                          </select><div id="order"
+                          onclick="SendOrder('order','JAR',700,'kgJAR')"
+                          >
+                          <button>Place Order</button><BR><a href="checkout.html">PAY</a>
                            </div>
                          
                     </h3></div>
                    <div class="flavour2">
                     <img id="trendingimage" src="/IMAGES/BARBIE.jpg" alt="some text" width="50px" height="170px" /><h3 id="flavourname"> BARBIE CAKES
-                        <br>Rs.800/-<div id="order">
-                            <h4><a href="signup.html">Place Order</h4></a>
+                        <br>Rs.800/-<br><select name="kg" id="kgBARBIE">
+                            <option value=1>1 Kg</option>
+                            <option value=2>2 Kg</option>
+                            <option value=3>3 Kg</option>
+                            <option value=4>4 Kg</option>
+                            <option value=5>5 Kg</option>
+                            
+                          </select><div id="order"
+                          onclick="SendOrder('order','BARBIE',800,'kgBARBIE')"
+                          >
+                          <button>Place Order</button>
                            </div>
-                         
+                           <a href="checkout.html">PAY</a>
                     </h3></div>
 
                 </div>
@@ -112,8 +202,10 @@
                  
         </blockquote>
         <p>We provide delicious cakes with minimum price at a greater speed.</p>   <br><a href="admin.html">Admin login</a>
-      </div>
-   
+     Contact us:tsathulya78@gmail.com,0011223344
+    </div>
+    
+   <script src="./orderhandle.js"></script>
        
 </body>
 </html>
