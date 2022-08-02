@@ -199,57 +199,11 @@ color: rgb(95, 18, 13);}
             <th>Cake ID</th>
             <th>Cake Name</th>
             <th>Price</th>
-            <th>Action</th>
+            <th>Availability</th>
         </thead>
 
-        <tbody id="title">
-            <tr><br><br>
-             <td>1</td><br>
-             <td>100</td>
-
-             <td>Black Forest</td>
-             <td>700</td>
-             <td><a onClick="onEdit(this)">Edit</a> |<a onClick="onDelete(this)">Delete</a></td>
-
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>108</td>
-                <td>Jar Cake</td>
-                <td>700</td>
-                
-                <td><a onClick="onEdit(this)">Edit</a> |<a onClick="onDelete(this)">Delete</a></td>
-
-               </tr>
-               
-                <tr>
-             <td>3</td>
-             <td>108</td>
-             <td>Chocolate</td>
-             <td>700</td>
-             
-             <td><a onClick="onEdit(this)">Edit</a> |<a onClick="onDelete(this)">Delete</a></td>
-
-                </tr>
-           
-                <tr>
-             <td>4</td>
-             <td>105</td>
-             <td>Theme Cake</td>
-             <td>700</td>
-             
-             <td><a onClick="onEdit(this)">Edit</a> |<a onClick="onDelete(this)">Delete</a></td>
-
-            </tr>
-           
-                <tr>
-             <td>5</td>
-             <td>109</td>
-             <td>Barbie Cake</td>
-             <td>700</td>
-             
-             <td><a onClick="onEdit(this)">Edit</a> |<a onClick="onDelete(this)">Delete</a></td>
-            </tr>
+        <tbody id="tablebody">
+            
         </tbody>
     </table>
     <div class="order">
@@ -261,35 +215,37 @@ color: rgb(95, 18, 13);}
         <tr>
             <td>
                 <h3 ><u> Update Cake Details </u></h3><br>
-    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+    <form>
        
-        <div>
+        <!-- <div>
             <label>Cake ID</label><br>
             <input type="text" name="cakeid" id="cakeid">
-        </div><br>
-        <div>
+        </div><br>-->
+        <div> 
             <label>Cake Name</label><br>
-            <input type="text" name="cakename" id="cakename">
+            <input type="text" name="cakename" id="cakenamein">
         </div><br>
         <div>
             <label>Price</label><br>
-            <input type="text" name="price" id="price">
+            <input type="text" name="price" id="pricein">
         </div><br>
         <div>
             <label>Status</label><label class="validation-error hide" id="fullNameValidationError"></label>
-            <br><input type="text" name="num" id="num">
+            <br><input type="text" name="num" id="numin">
         </div><br>
-        <div  class="form-action-buttons">
-            <input type="submit" value="Submit"
-            onformsubmit=" UpdateItem('order','chocolate',750,'available')"
-            >
-        </div>
+        
     </form>
+    <div  class="form-action-buttons">
+        <input type="submit" value="Submit"
+        onclick=" UpdateItem('stock')"
+        >
+    </div>
 </td></tr></table>
 
 
 
   <script src="./updatehandler.js"></script>
 
+<script>GetData("tablebody","stock")</script>
 </body>
 </html>

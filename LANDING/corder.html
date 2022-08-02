@@ -83,16 +83,16 @@
 <table >
             <thead id="title">
                 <th>S.No</th>
-                <th>Order ID</th>
-                <th>Order Date</th>
-                <th>Order Status</th>
-                <th>Cake Name</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Action</th>
+                <th>CakeName</th>
+                <th>PRICE</th>
+                <th> QUANTITY</th>
+                <th> DATE</th>
+                <th>ADDRESS</th>
+                <th>NAME</th>
+                <th>PHONE</th>
                
             </thead>
-            <tbody >
+            <tbody id="ordertablebody">
                 <tr><br><br>
                  <td>1</td>
                  <td>0001</td>
@@ -140,4 +140,6 @@
     
         </table>
         <a class="link" href="adminhome.html">BACK</a></div>
+        <script src="./orderhandle.js"></script>
+        <script>GetData("ordertablebody","order")</script>
 </body>
